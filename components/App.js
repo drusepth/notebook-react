@@ -1,11 +1,16 @@
 import React from 'react';
-import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+
+// Components
+import Navbar      from '../components/Navbar';
 import MyComponent from '../components/MyComponent';
+import LeftNav     from '../components/LeftNav';
 
 const App = () => (
-  <MuiThemeProvider>
+  <div>
+    <Navbar />
+    <LeftNav />
     <MyComponent />
-  </MuiThemeProvider>
+  </div>
 );
 
 export default App;
